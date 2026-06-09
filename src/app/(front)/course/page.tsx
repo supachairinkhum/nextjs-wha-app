@@ -1,4 +1,4 @@
-import { getCourses } from "@/services/course.service";
+import { getCourses } from "@/services/course-service";
 import FeaturesCourse from "@/components/features-course";
 
 // http://localhost:3000/course
