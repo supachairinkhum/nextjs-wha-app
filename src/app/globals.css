@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -7,9 +8,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-heading);
+  --font-sans: "Nunito", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --font-heading: "Poppins", sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -39,48 +40,49 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --radius-sm: calc(var(--radius) * 0.6);
-  --radius-md: calc(var(--radius) * 0.8);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) * 1.4);
-  --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-3xl: 48px;
+  --radius-4xl: 64px;
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.148 0.004 228.8);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.148 0.004 228.8);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.148 0.004 228.8);
-  --primary: oklch(0.508 0.118 165.612);
-  --primary-foreground: oklch(0.979 0.021 166.113);
-  --secondary: oklch(0.967 0.001 286.375);
-  --secondary-foreground: oklch(0.21 0.006 285.885);
-  --muted: oklch(0.963 0.002 197.1);
-  --muted-foreground: oklch(0.56 0.021 213.5);
-  --accent: oklch(0.963 0.002 197.1);
-  --accent-foreground: oklch(0.218 0.008 223.9);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.925 0.005 214.3);
-  --input: oklch(0.925 0.005 214.3);
-  --ring: oklch(0.723 0.014 214.4);
-  --chart-1: oklch(0.808 0.114 19.571);
-  --chart-2: oklch(0.637 0.237 25.331);
-  --chart-3: oklch(0.577 0.245 27.325);
-  --chart-4: oklch(0.505 0.213 27.518);
-  --chart-5: oklch(0.444 0.177 26.899);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.987 0.002 197.1);
-  --sidebar-foreground: oklch(0.148 0.004 228.8);
-  --sidebar-primary: oklch(0.596 0.145 163.225);
-  --sidebar-primary-foreground: oklch(0.979 0.021 166.113);
-  --sidebar-accent: oklch(0.963 0.002 197.1);
-  --sidebar-accent-foreground: oklch(0.218 0.008 223.9);
-  --sidebar-border: oklch(0.925 0.005 214.3);
-  --sidebar-ring: oklch(0.723 0.014 214.4);
+  --background: #FAFAFA;
+  --foreground: #171717;
+  --card: #FFFFFF;
+  --card-foreground: #171717;
+  --popover: #FFFFFF;
+  --popover-foreground: #171717;
+  --primary: #D946EF;
+  --primary-foreground: #FFFFFF;
+  --secondary: #22D3EE;
+  --secondary-foreground: #FFFFFF;
+  --muted: #F5F5F5;
+  --muted-foreground: #525252;
+  --accent: #FACC15;
+  --accent-foreground: #171717;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --border: #E5E5E5;
+  --input: #D4D4D4;
+  --ring: #D946EF;
+  --chart-1: #D946EF;
+  --chart-2: #22D3EE;
+  --chart-3: #FACC15;
+  --chart-4: #22C55E;
+  --chart-5: #3B82F6;
+  --radius: 16px;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #171717;
+  --sidebar-primary: #D946EF;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F5F5F5;
+  --sidebar-accent-foreground: #D946EF;
+  --sidebar-border: #E5E5E5;
+  --sidebar-ring: #D946EF;
 }
 
 .dark {
