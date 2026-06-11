@@ -6,13 +6,8 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <div className="flex min-h-screen items-center justify-center px-6">
-
       <div className="relative z-10 max-w-3xl text-center">
-        <Badge
-          asChild
-          className="rounded-full border-border py-1"
-          variant="secondary"
-        >
+        <Badge variant="default" asChild>
           <Link href="#">
             Just released v1.0.0 <ArrowUpRight className="ml-1 size-4" />
           </Link>
