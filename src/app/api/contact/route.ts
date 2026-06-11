@@ -2,9 +2,8 @@ import { Resend } from 'resend';
 import { contactSchema } from '@/lib/validations/contact';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: Request) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const body = await req.json();
     const result = contactSchema.safeParse(body);
